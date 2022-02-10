@@ -12,6 +12,7 @@
  
 - name: /www/html
   file:
+    path: /www/html/
     state: directory
     owner: root
     mode: 0755 
