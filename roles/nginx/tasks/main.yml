@@ -9,16 +9,16 @@
     name: nginx
     state: started
   
+ 
+- name: /www/html
+  file:
+    state: directory
+    owner: root
+    mode: 0755 
 
 - name: index
   template:
     src: index.html.j2
     dest: /var/www/html/index.html
     
-- name: /www/html/
-  file:
-    state: directory
-    owner: root
-    group: root
-    mode: 0755
     
