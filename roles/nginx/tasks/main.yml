@@ -13,10 +13,11 @@
 - name: create directory  
   file:
     path: /var/www/html
-    mode: 0755
-    recurse: yes
     state: directory
     owner: root
+    recurse: yes
+    mode: 0755
+    
 
 - name: index
   template:
